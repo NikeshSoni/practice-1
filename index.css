@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#myForm {
+    width: 50%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#contentArea {
+    width: 20%;
+    background-color: #ccc;
+    text-align: center;
+    margin: 15px auto;
+    overflow-y: hidden;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+#contentArea:hover {
+    box-shadow: 10px 21px 8px -4px rgba(227, 209, 209, 0.75);
+    -webkit-box-shadow: 10px 21px 8px -4px rgba(227, 209, 209, 0.75);
+    -moz-box-shadow: 10px 21px 8px -4px rgba(227, 209, 209, 0.75);
+    transition: .5s;
+}
+
+.main-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* overflow: hidden; */
+    margin-top: 30px;
+}
+
+.image-holder {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.comman-image {
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 10px;
+}

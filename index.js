@@ -34,7 +34,6 @@ $('.main-container').html('<p>New HTML content</p>');
 
 //  Api Handle code was here
 
-
 // $(document).ready(function () {
 //     $.ajax({
 //         url: "https://fakestoreapi.com/products",
@@ -49,7 +48,6 @@ $('.main-container').html('<p>New HTML content</p>');
 //                                                       <p> ${item.category} </p>
 //                                                       <p> ${item.title}  </p>
 //                                                  </div>`);
-
 //             });
 //         },
 //         error: function (error) {

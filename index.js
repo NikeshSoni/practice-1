@@ -10,19 +10,19 @@ $(document).ready(function () {
         console.log("Name:", name);
         console.log("Email:", email);
         console.log("Password:", password);
+
     });
 });
 
-$(document).ready(function (event) {
-    var data = "Hii i am NIkesh"
-   const main =  $("#myInput").val(data)
-   console.log(main);
-})
+// $(document).ready(function (event) {
+//     var data = "Hii i am NIkesh"
+//    const main =  $("#myInput").val(data)
+//    console.log(main);
+// })
 
-var htmlContent = $('.main-container').html();
-
-// Set HTML content
-$('.main-container').html('<p>New HTML content</p>');
+// var htmlContent = $('.main-container').html();
+// // Set HTML content
+// $('.main-container').html('<p>New HTML content</p>');
 
 // $(document).ready(function() {
 //     $("#loadButton").click(function() {
@@ -35,26 +35,39 @@ $('.main-container').html('<p>New HTML content</p>');
 //  Api Handle code was here
 
 
-// $(document).ready(function () {
-//     $.ajax({
-//         url: "https://fakestoreapi.com/products",
-//         type: "GET",
-//         success: function (data) {
-//             $(".main-container").empty();
-//             $.each(data, function (index, item) {
-//                 $(".main-container").append(`<div id="contentArea">
-//                                                     <div class="image-holder">
-//                                                         <img class="comman-image" src="${item.image}" />
-//                                                     </div>
-//                                                       <p> ${item.category} </p>
-//                                                       <p> ${item.title}  </p>
-//                                                  </div>`);
+$(document).ready(function () {
+    $.ajax({
+        url: "https://fakestoreapi.com/products",
+        type: "GET",
+        success: function (data) {
+            $(".main-container").empty();
+            $.each(data, function (index, item) {
+                $(".main-container").append(`<div id="contentArea">
+                                                    <div class="image-holder">
+                                                        <img class="comman-image" src="${item.image}" />
+                                                    </div>
+                                                      <p> ${item.category} </p>
+                                                      <p> ${item.title}  </p>
+                                               </div>`);
+            });
+        },
+        error: function (error) {
+            console.log("Error:", error);
+        }
+    });
+});
 
-//             });
-//         },
-//         error: function (error) {
-//             console.log("Error:", error);
-//         }
-//     });
-// });
+
+const main = async () => {
+
+    const store = await fetch('https://fakestoreapi.com/products');
+
+}
+
+// $(document).ready(function () {
+//     $('#clearButton').css('background' , 'aqua' , "color", "black")
+//     $('#clearButton').click(function () {
+//     $('#container').empty()
+//     $('#clearButton').css('background' , 'green')})
+// })
 

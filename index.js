@@ -10,19 +10,19 @@ $(document).ready(function () {
         console.log("Name:", name);
         console.log("Email:", email);
         console.log("Password:", password);
+
     });
 });
 
-$(document).ready(function (event) {
-    var data = "Hii i am NIkesh"
-   const main =  $("#myInput").val(data)
-   console.log(main);
-})
+// $(document).ready(function (event) {
+//     var data = "Hii i am NIkesh"
+//    const main =  $("#myInput").val(data)
+//    console.log(main);
+// })
 
-var htmlContent = $('.main-container').html();
-
-// Set HTML content
-$('.main-container').html('<p>New HTML content</p>');
+// var htmlContent = $('.main-container').html();
+// // Set HTML content
+// $('.main-container').html('<p>New HTML content</p>');
 
 // $(document).ready(function() {
 //     $("#loadButton").click(function() {
@@ -33,6 +33,7 @@ $('.main-container').html('<p>New HTML content</p>');
 
 
 //  Api Handle code was here
+
 
 // $(document).ready(function () {
 //     $.ajax({
@@ -48,6 +49,7 @@ $('.main-container').html('<p>New HTML content</p>');
 //                                                       <p> ${item.category} </p>
 //                                                       <p> ${item.title}  </p>
 //                                                  </div>`);
+
 //             });
 //         },
 //         error: function (error) {
